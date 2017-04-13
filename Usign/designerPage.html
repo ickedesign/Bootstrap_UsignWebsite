@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>设计师主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">	
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+		.beginPage{
+			padding-top: 30px;
+			max-width: 550px;
+  			margin: 0 auto;
+		}
+		footer{
+			padding-top: 30px;
+		}
+
+    </style>
+
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="index.html">Usign</a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">个人主页</a></li>
+              
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            	<li><a href="#">设计师</a></li>
+            	<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">张三 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab">个人主页</a></li>
+                        <li><a href="#feature-tab">通知</a></li>
+                        <li><a href="#feature-tab">设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#feature-tab">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Begin page content -->
+<div class="beginPage container">
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+	  		<img style="width: 150px;border-radius:100px" src="images/headPortrait.png" alt="headPortrait">
+	  	</div>
+	  	<div class="col-md-7">
+	  		<h1 class="text-primary">张三</h1>
+	  		<br>
+	  		<span class="label label-primary">小清新</span>
+			<span class="label label-success">街头风</span>
+			<span class="label label-info">OL装设计</span>
+			
+	  	</div>
+  	</div>
+
+  	<div>
+  		<div class="page-header">
+    		<h3>公告栏
+			<button id="submitBtn" type="submit" class="btn btn-xs btn-primary" style="float: right;">&nbsp;&nbsp;换一批&nbsp;&nbsp;</button>
+			</h3>
+  		</div>      		
+  		<div>
+      		<a href="#">[活动]&nbsp; 2017-4-13&nbsp; Usign线上投稿设计作品，即有机会获得1万奖金</a><br>
+	  		<a href="#">[招聘]&nbsp; 2017-4-13&nbsp; 广州丰意佳和科技发展有限公司需女装oversize卫衣设计图一张</a><br>
+	  		<a href="#">[招聘]&nbsp; 2017-4-13&nbsp; 广州战歌服饰有限公司招聘服装设计师</a><br>
+	  		<a href="#">[招聘]&nbsp; 2017-4-13&nbsp; 广州睿兆服饰股份有限公司招聘男装设计助理</a>
+	  	</div>	
+
+  		<div class="page-header">
+    		<h3>个人资历
+			<button id="submitBtn" type="submit" class="btn btn-xs btn-primary" style="float: right;">&nbsp;&nbsp;修改&nbsp;&nbsp;</button>
+			</h3>
+  		</div>      		
+  		<div>
+      		<p>2017年2月至今，就职于广州华美服装设计公司任服装设计师</p>
+      		<p>2016年7月，毕业于华南农业大学服装设计专业</p>
+      		<p>2016年1月至4月，在珠海Moma有限公司任男装设计实习助理</p>
+      		<p>2013年9月至2016年7月，获得一等奖学金两次，三等奖学金一次，在美饰网举办的服装设计比赛中获得亚军</p>
+		</div>	
+
+  		<div class="page-header">
+    		<h3>认同度</h3>
+  		</div>      		
+  		<div>
+			<span class="text-primary" style="padding-right:20px;">小清新 <span class="badge">2</span></span>
+			<span class="text-primary" style="padding-right:20px;">街头风 <span class="badge">20</span></span>
+			<span class="text-primary" style="padding-right:20px;">OL装设计 <span class="badge">9</span></span>
+		</div>	
+
+		<footer>
+			<p class="pull-right"><a href="#top">回到顶部</a></p>
+			<p>&copy; 2017 Usign &middot; <a href="#">联系我们</a> &middot; <a href="#">加入我们</a></p>
+		</footer>
+</div>
+<div class="container">
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

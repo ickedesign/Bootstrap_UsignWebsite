@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Usign首页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 特性 */
+
+        .feature-divider {
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 30px 0;
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="#">Usign</a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li><a href="#summary-container">简述</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">设计师专栏</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">Usign工作室</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">Usign社区</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            	<li><a href="#">注册</a></li>
+            	<li class="active "><a href="signin.html">登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/banner6.jpg" alt="1 slide">
+
+          
+        </div>
+        <div class="item">
+            <img src="images/banner3.jpg" alt="2 slide">
+
+        </div>
+        <div class="item">
+            <img src="images/banner1.jpg" alt="3 slide">
+	
+        </div>
+        <div class="item">
+            <img src="images/banner5.jpg" alt="4 slide">
+
+        </div>
+        <div class="item">
+            <img src="images/banner2.jpg" alt="5 slide">
+
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+        <div class="col-md-4">
+            <img class="img-circle" src="images/fengrenji-small.jpg" alt="chrome">
+
+            <h2>设计师专栏</h2>
+
+            <p>查看设计师们的服装作品</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我进入</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/computer-small.jpg" alt="firefox">
+
+            <h2>Usign工作室</h2>
+
+            <p>提供您的需求，我们来帮您设计</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我进入</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/community-small.jpg" alt="safari">
+
+            <h2>Usign社区</h2>
+
+            <p>一个设计师们畅所欲言的地方，赶紧加入我们吧</p>
+
+            <p><a class="btn btn-default" href="#" role="button">点我进入</a></p>
+        </div>
+    </div>
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">设计师专栏</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">Usign工作室</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">Usign社区</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">设计师专栏 <span
+                            class="text-muted">设计师们的作品聚集地</span></h2>
+
+                    <p class="lead">设计师专栏，一个展现设计师们设计作品的地方。
+                        该专栏每日更新，精挑细选优秀的设计作品，目标是为设计师们提供一个寻求灵感的地方，并让好的设计作品让更多的人知道。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/designer-big.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/studio-big.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Usign工作室 <span class="text-muted">为您设计需求产品的平台</span>
+                    </h2>
+
+                    <p class="lead">Usign工作室，由Usign内部成员组成。提供您的需求，我们来帮您设计。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Usign社区 <span class="text-muted">设计师们畅所欲言的地方</span></h2>
+
+                    <p class="lead">Usign社区，在这里设计师们可以互相交流。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/community-big.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Usign，是一家从事服装设计的公司。秉承“开拓、创新、公平、分享”的精神，
+                        将互联网特性全面的应用在服装设计领域，致力于为设计师及求学者打造一站式互动在线的品牌。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+
+        <p>&copy; 2017 Usign &middot; <a href="#">联系我们</a> &middot; <a href="#">加入我们</a></p>
+    </footer>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

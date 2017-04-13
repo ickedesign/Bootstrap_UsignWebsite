@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>批发商主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">	
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+		.beginPage{
+			padding-top: 30px;
+			max-width: 550px;
+  			margin: 0 auto;
+		}
+		footer{
+			padding-top: 30px;
+		}
+
+    </style>
+
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="index.html">Usign</a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">个人主页</a></li>
+              
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            	<li><a href="#">批发商</a></li>
+            	<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">美乐服装批发有限公司 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab">个人主页</a></li>
+                        <li><a href="#feature-tab">通知</a></li>
+                        <li><a href="#feature-tab">设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#feature-tab">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Begin page content -->
+<div class="beginPage container">
+
+	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+	  		<img style="width: 150px;border-radius:100px" src="images/headPortrait-female.png" alt="headPortrait">
+	  	</div>
+	  	<div class="col-md-7">
+	  		<h1 class="text-primary">美乐服装批发有限公司</h1>
+	  		<br>
+	  		<span class="label label-success">主营：时尚女装</span>			
+	  	</div>
+  	</div>
+
+  	<div>
+  		<div class="page-header">
+    		<h3>公告栏
+			<button id="submitBtn" type="submit" class="btn btn-xs btn-primary" style="float: right;">&nbsp;&nbsp;换一批&nbsp;&nbsp;</button>
+			</h3>
+  		</div>      		
+  		<div>
+      		<a href="#">[活动]&nbsp; 2017-4-13&nbsp; Usign夏季活动来袭，只要订单价格超过1万元，即补贴500元</a><br>
+	  		<a href="#">[社区]&nbsp; 2017-4-13&nbsp; 批发商如何更好地省钱？</a><br>      		
+	  		<a href="#">[社区]&nbsp; 2017-4-13&nbsp; 批发商如何找到好的设计师？</a><br>
+	  		<a href="#">[社区]&nbsp; 2017-4-13&nbsp; 当季流行什么款式，哪些款式不流行了？</a><br>
+	  	</div>	
+		
+		<div>
+	  		<div class="page-header">
+	    		<h3>操作栏</h3>
+	  		</div> 	
+	  		<div class="text-center">	
+				<button id="submitBtn" type="submit" class="btn btn-sm btn-primary" style="margin-right: 50px;">&nbsp;&nbsp;发布设计需求&nbsp;&nbsp;</button>
+				<button id="submitBtn" type="submit" class="btn btn-sm btn-primary ">&nbsp;&nbsp;已接单情况&nbsp;&nbsp;</button>
+			</div>
+		</div>
+		<footer>
+			<p class="pull-right"><a href="#top">回到顶部</a></p>
+			<p>&copy; 2017 Usign &middot; <a href="#">联系我们</a> &middot; <a href="#">加入我们</a></p>
+		</footer>
+</div>
+<div class="container">
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册Usign</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signup.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.css" />
+
+    <style type="text/css">
+		#page{
+			background: url(images/sign-up-bg1440.jpg) left top repeat;
+		}
+    </style>
+</head>
+
+<body>
+<div id="page">
+ 	<div class="section section1 container">
+        <form class="form-horizontal">
+          <h2 class="form-signup-heading" style="color:#fff">注册Usign</h2>
+          <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label" style="color:#fff">姓名</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="Fullname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputSex" class="col-sm-2 control-label" style="color:#fff">性别</label>
+            <div class="col-sm-2">
+                <select class="form-control" id="inputSex">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+          </div>  
+          <div class="form-group">
+            <label for="inputUserName" class="col-sm-2 control-label" style="color:#fff">用户名</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputUserName" placeholder="Username">
+            </div>
+          </div>          
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label" style="color:#fff">密码</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputConfirmPassword" class="col-sm-2 control-label" style="color:#fff">确认密码</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Password">
+            </div>
+          </div> 
+          <div class="form-group">
+            <label for="inputUserStyle" class="col-sm-2 control-label" style="color:#fff">用户类型</label>
+            <div class="col-sm-3">
+                <select class="form-control" id="inputUserStyle">
+                    <option>设计师</option>
+                    <option>批发商</option>
+                    <option>个体游客</option>
+                </select>
+            </div>
+          </div>  
+          <div class="form-group">
+            <label for="inputPhone" class="col-sm-2 control-label" style="color:#fff">手机号码</label>
+            <div class="col-sm-5">
+              <input type="tel" class="form-control" id="inputPhone" placeholder="PhoneNumber">
+            </div>
+          </div>  
+          <div class="form-group">
+            <label for="inputCode" class="col-sm-2 control-label" style="color:#fff">验证码</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputCode" placeholder="VerificationCode">
+            </div>
+            <button id="codeBtn" class="col-sm-3 btn btn-danger">点击发送验证码</button>
+          </div>  
+          <div id="showInputFile" class="form-group" style="margin-bottom:0px;">
+            <label for="inputFile" class="col-sm-2 control-label" style="color:#fff">提交证明</label>
+            <input class="col-sm-10" type="file" id="inputFile" style="color:#fff">
+            <p class="col-sm-offset-2 col-sm-10 help-block">请提交有效批发商证明，审核结果将在三天内公布，请耐心等候</p>
+          </div>                                   
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button id="submitBtn" type="submit" class="btn btn-primary">&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
+            </div>
+          </div>
+        </form>
+
+    </div> <!-- /container -->
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullpage.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('#page').fullpage();
+
+            $('#showInputFile').hide();
+            $('#inputUserStyle').click(function(){
+                if($(this).val()=='批发商'){
+                    $('#showInputFile').show(600);
+                }
+                else{
+                     $('#showInputFile').hide(600);
+                }                
+            })
+
+		}
+	)
+</script>
+</body>
+</html>
