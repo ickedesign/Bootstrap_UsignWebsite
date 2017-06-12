@@ -1,7 +1,7 @@
 # Bootstrap_UsignWebsite
 使用Bootstrap搭建的服装设计网站Usign
 
-使用了Bootstrap框架和JQuery库
+使用了Bootstrap框架，JQuery库以及Fullpage.js库
 
 > 2017/05/22更新：:sparkles: 添加了工厂主页，更新了主页和一些跳转链接
 
